@@ -5,34 +5,24 @@ const Pagination = ({ page, handleClick }) => {
   return (
     <div className="d-grid gap-2 d-md-flex col-2 mx-auto justify-content-md-center Pagination">
       {page.previous ? (
-        <button
-          className="buttonPrev"
-          type="button"
+        <i
+          className="fa-solid fa-circle-arrow-left fa-2xl buttonNext"
           onClick={() => {
             handleClick(page.previous);
           }}
-        >
-          Previous
-        </button>
+        ></i>
       ) : (
-        <button className="buttonDis" type="button">
-          Previous
-        </button>
+        <i className="fa-solid fa-circle-arrow-left fa-2xl buttonDis buttonNext"></i>
       )}
       {page.next ? (
-        <button
-          className="buttonNext"
-          type="button"
+        <i
+          className="fa-solid fa-circle-arrow-right fa-2xl buttonNext"
           onClick={() => {
             handleClick(page.next);
           }}
-        >
-          Next
-        </button>
+        ></i>
       ) : (
-        <button className="buttonDis" type="button">
-          Previous
-        </button>
+        <i className="fa-solid fa-circle-arrow-right fa-2xl buttonDis buttonNext"></i>
       )}
     </div>
   );
