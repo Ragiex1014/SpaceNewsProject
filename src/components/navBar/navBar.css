@@ -1,3 +1,96 @@
-.active {
-  color: red;
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1b2430;
+  padding: 20px 80px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
 }
+
+#navBar .logo{
+margin-left: 20px;
+}
+
+#navBar ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+#navBar ul li{
+  padding: 0 20px;
+  list-style: none;
+  position: relative;
+ 
+}
+
+.navlink{
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  transition: 0.5s ease-in-out;
+}
+
+.navlink:hover{
+  color: #4845D2;
+}
+
+#mobile{
+  display: none;
+}
+
+#mobile i
+{
+  color: white;
+  margin-right: 20px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+#mobile i:hover{
+  color: #4845D2;
+}
+
+.active{
+  color: #4845D2;
+}
+
+
+@media screen and (max-width:760px){
+
+  #navBar ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    top: 86px;
+    right: -20px;
+    width: 300px;
+    height: 50vh;
+    background-color: #2a3239;
+    z-index: 1;
+    box-shadow: 0 40px 60px rga(0,0,0,0.5);
+    padding: 40px 0 0 10px;
+    transition: 0.5s ease-in-out;
+  }
+  .navBar ul li{
+    margin-bottom: 25px;
+  
+  }
+  #mobile{
+    display: block;
+  }
+
+  #navBar ul.navactive{
+    right: -320px;
+  }
+
+
+
+}
+
+

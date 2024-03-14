@@ -5,7 +5,7 @@ import Search from "../search/search";
 import Pagination from "../pagination/pagination";
 import "./report.css";
 import CardList from "../cardList/cardList";
-import { useFetch } from "../../customHooks/Await/await";
+import { useFetch } from "../../customHooks/fetchHook";
 
 const Report = () => {
   const [url, setUrl] = useState(

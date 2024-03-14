@@ -1,9 +1,9 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "./home.css";
 import CardList from "../cardList/cardList";
 import Pagination from "../pagination/pagination";
 import Search from "../search/search";
-import { useFetch } from "../../customHooks/Await/await";
+import { useFetch } from "../../customHooks/fetchHook";
 
 function Home() {
   const [url, setUrl] = useState(
